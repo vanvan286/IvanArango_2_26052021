@@ -87,10 +87,65 @@ ul{
     
 }
 
+#titre_filtres{
+    display: flex;
+    align-items: center;
+}
+
 #liste_filtres{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    border: 1px solid #F2F2F2;
-    border-radius: 50px;
 }
+
+.lien_filtre{
+    text-decoration: none;
+}
+
+#Economique{
+    display: flex;
+    border: 2px solid #F2F2F2;
+    margin-right: 20px;
+    border-radius: 15px;
+    padding: 7px;
+}
+
+#Economique:hover{
+    background-color: #DEEBFF;
+}
+
+#Familial{
+    display: flex;
+    border: 2px solid #F2F2F2;
+    margin-right: 20px;
+    border-radius: 15px;
+    padding: 7px;
+}
+
+#Familial:hover{
+    background-color: #DEEBFF;
+}
+
+#Romantique{
+    display: flex;
+    border: 2px solid #F2F2F2;
+    margin-right: 20px;
+    border-radius: 15px;
+    padding: 7px;
+}
+
+#Romantique:hover{
+    background-color: #DEEBFF;
+}
+
+#Animaux{
+    display: flex;
+    border: 2px solid #F2F2F2;
+    margin-right: 20px;
+    border-radius: 15px;
+    padding: 7px;
+}
+
+#Animaux:hover{
+    background-color: #DEEBFF;
+}
+
