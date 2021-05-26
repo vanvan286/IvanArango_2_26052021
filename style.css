@@ -59,3 +59,38 @@ nav{
     max-width: 1440px;
     margin: auto;
 }
+
+#section_rechercher{
+    display: flex;
+}
+
+#bouton_rechercher{
+    background-color: #0065FC;
+    border: solid 1px #0065FC;
+    font-weight: bold;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: ivory;
+    height: 40px;
+    padding: 12px;
+    text-align: center;
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+#filtres{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+#liste_filtres{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #F2F2F2;
+    border-radius: 50px;
+}
