@@ -31,7 +31,7 @@ header{
 header img{
     width: 100px;
 }
-
+/*navigation*/
 nav{
     display: grid;
     grid-template-columns: 5fr 1fr 1fr 1fr;
@@ -62,7 +62,7 @@ nav{
     border-top: #0065FC solid 2px;
     margin-top: 0px;
 }
-
+/*recherche*/
 #recherche{
     max-width: 1440px;
     margin: auto;
@@ -70,6 +70,16 @@ nav{
 
 #section_rechercher{
     display: flex;
+}
+
+.fas {
+    display: flex;
+    align-items: center;    
+    background-color: #F2F2F2;
+    height: 12px;
+    padding: 12px;
+    border-radius: 15px;
+
 }
 
 #bouton_rechercher{
@@ -84,7 +94,11 @@ nav{
     text-align: center;
 }
 
+#rechercher{
+    border: 1px solid #F2F2F2;
+}
 
+/*filtres*/
 ul{
     list-style-type: none;
 }
@@ -111,10 +125,11 @@ ul{
 
 #Economique{
     display: flex;
-    border: 2px solid #F2F2F2;
+    border: 1px solid #F2F2F2;
     margin-right: 20px;
     border-radius: 15px;
     padding: 7px;
+    
 }
 
 #Economique:hover{
@@ -157,3 +172,10 @@ ul{
     background-color: #DEEBFF;
 }
 
+
+
+#infos{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
