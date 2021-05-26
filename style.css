@@ -1,3 +1,14 @@
+@font-face {
+    font-family: "raleway";
+    src: url(fonts/Raleway-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "raleway regular";
+    src: url(fonts/static/Raleway-Regular.ttf);
+}
+
+
 body{
     font-family: "raleway regular";
 }
@@ -7,6 +18,7 @@ header{
     max-width: 1440px;
     justify-content: space-between;
     margin: auto;
+    flex-wrap: wrap;
 }
 
 #logo_reservia{
@@ -41,4 +53,9 @@ nav{
     text-decoration: none;
     color: inherit;
     display: flex;
+}
+
+#recherche{
+    max-width: 1440px;
+    margin: auto;
 }
