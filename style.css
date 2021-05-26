@@ -1,0 +1,44 @@
+body{
+    font-family: "raleway regular";
+}
+
+header{
+    display: flex;
+    max-width: 1440px;
+    justify-content: space-between;
+    margin: auto;
+}
+
+#logo_reservia{
+    display: flex;
+    justify-self: flex-start;
+
+}
+
+header img{
+    width: 100px;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr 1fr;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    align-items: center;
+    justify-items: center;
+}
+
+.bouton_nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.lien_nav{
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+}
