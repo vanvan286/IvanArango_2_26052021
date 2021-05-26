@@ -11,6 +11,7 @@
 
 body{
     font-family: "raleway regular";
+    margin: auto;
 }
 
 header{
@@ -53,6 +54,13 @@ nav{
     text-decoration: none;
     color: inherit;
     display: flex;
+}
+
+.lien_nav:hover{
+    font-weight: bold;
+    color: #0065FC;
+    border-top: #0065FC solid 2px;
+    margin-top: 0px;
 }
 
 #recherche{
