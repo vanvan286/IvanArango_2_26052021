@@ -62,13 +62,6 @@ body{
     margin: auto;
 }
 
-header{
-    display: flex;
-    max-width: 1440px;
-    justify-content: space-between;
-    margin: auto;
-    flex-wrap: wrap;
-}
 
 .container{
     width: 1024px;
@@ -80,35 +73,32 @@ a{
     text-decoration: none;
 }
 
-#logo_reservia{
+.logo_reservia{
     display: flex;
     justify-self: flex-start;
 
 }
 
-header img{
+.header_container img{
     width: 100px;
+    display: block;
+    padding: 30px  45px;
+    border-top: 2px solid transparent;
 }
+
 /*navigation*/
-nav{
-    display: grid;
-    grid-template-columns: 5fr 1fr 1fr 1fr;
-    height: 100%;
-    width: 100%;
-    margin: 0px;
-    align-items: center;
-    justify-items: center;
+
+.header_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_container ul{
+    display: flex;
+    flex-direction: row;
 }
 
 .bouton_nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-
-.lien_nav{
     color: #000;
     display: block;
     padding: 45px 25px 0px 25px;
@@ -116,14 +106,21 @@ nav{
     font-weight: bold;
 }
 
-.lien_nav:hover{
+.bouton_nav:hover{
     color: #0065FC;
     border-top: #0065FC solid 2px;
 }
+
 /*recherche*/
 #recherche{
     max-width: 1440px;
     margin: auto;
+    font-weight: bold;
+}
+
+#recherche p{
+    font-size: small;
+    font-weight: normal;
 }
 
 #section_rechercher{
