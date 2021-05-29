@@ -1,0 +1,239 @@
+@font-face {
+    font-family: "raleway";
+    src: url(fonts/Raleway-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "raleway regular";
+    src: url(fonts/static/Raleway-Regular.ttf);
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    font-family: "raleway regular";
+    margin: auto;
+}
+
+header{
+    display: flex;
+    max-width: 1440px;
+    justify-content: space-between;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.container{
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+#logo_reservia{
+    display: flex;
+    justify-self: flex-start;
+
+}
+
+header img{
+    width: 100px;
+}
+/*navigation*/
+nav{
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr 1fr;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    align-items: center;
+    justify-items: center;
+}
+
+.bouton_nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.lien_nav{
+    color: #000;
+    display: block;
+    padding: 45px 25px 0px 25px;
+    border-top: 2px solid transparent;
+    font-weight: bold;
+}
+
+.lien_nav:hover{
+    color: #0065FC;
+    border-top: #0065FC solid 2px;
+}
+/*recherche*/
+#recherche{
+    max-width: 1440px;
+    margin: auto;
+}
+
+#section_rechercher{
+    display: flex;
+}
+
+.fas {
+    display: flex;
+    align-items: center;    
+    background-color: #F2F2F2;
+    height: 12px;
+    padding: 12px;
+    border-radius: 15px;
+
+}
+
+#bouton_rechercher{
+    background-color: #0065FC;
+    border: solid 1px #0065FC;
+    font-weight: bold;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: ivory;
+    height: 40px;
+    padding: 12px;
+    text-align: center;
+}
+
+#rechercher{
+    border: 1px solid #F2F2F2;
+}
+
+/*filtres*/
+ul{
+    list-style-type: none;
+}
+
+#filtres{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+#titre_filtres{
+    display: flex;
+    align-items: center;
+}
+
+#liste_filtres{
+    display: flex;
+    align-items: center;
+}
+
+.lien_filtre{
+    text-decoration: none;
+}
+
+#Economique{
+    display: flex;
+    border: 1px solid #F2F2F2;
+    margin-right: 20px;
+    border-radius: 15px;
+    padding: 7px;
+    
+}
+
+#Economique:hover{
+    background-color: #DEEBFF;
+}
+
+#Familial{
+    display: flex;
+    border: 2px solid #F2F2F2;
+    margin-right: 20px;
+    border-radius: 15px;
+    padding: 7px;
+}
+
+#Familial:hover{
+    background-color: #DEEBFF;
+}
+
+#Romantique{
+    display: flex;
+    border: 2px solid #F2F2F2;
+    margin-right: 20px;
+    border-radius: 15px;
+    padding: 7px;
+}
+
+#Romantique:hover{
+    background-color: #DEEBFF;
+}
+
+#Animaux{
+    display: flex;
+    border: 2px solid #F2F2F2;
+    margin-right: 20px;
+    border-radius: 15px;
+    padding: 7px;
+}
+
+#Animaux:hover{
+    background-color: #DEEBFF;
+}
+
+
+
+#infos{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
