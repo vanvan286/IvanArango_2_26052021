@@ -352,6 +352,11 @@ ul{
     padding-left: 15px;
     border-radius: 15px;
     background-color: #FFFFFF;
+    transition: 0.5s;
+}
+
+#cannebiere a{
+    color: black;
 }
 
 #cannebiere h3{
@@ -364,10 +369,18 @@ ul{
     margin-top: 10px;
 }
 
+#cannebiere:hover{
+    transform: scale(1.05);
+    
+}
+
 .fas.fa-star{
     margin-top: 10px;
     margin-bottom: 10px;
+    color: #0065FC;   
 }
+
+
 /*Footer*/
 
 .footer_container{
