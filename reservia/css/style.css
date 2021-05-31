@@ -113,29 +113,45 @@ a{
 
 /*recherche*/
 #recherche{
-    max-width: 1440px;
     margin: auto;
-    font-weight: bold;
+    font-weight: bolder;
+    font-size: 18px;
 }
 
 #recherche p{
-    font-size: small;
+    font-size: 12px;
     font-weight: normal;
 }
 
 #section_rechercher{
     display: flex;
+    height: 50px;
 }
 
-.fas {
+#rechercher{
+    width: 234px;
+}
+
+#rechercher::placeholder{
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    padding-left: 14px;
+}
+
+.fas.fa-map-marker-alt{
     display: flex;
-    align-items: center;    
+    align-items: center;
+    justify-content: space-around;    
     background-color: #F2F2F2;
-    height: 12px;
-    padding: 12px;
-    border-radius: 15px;
+    height: 50px;
+    width: 50px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
 
 }
+
+
 
 #bouton_rechercher{
     background-color: #0065FC;
@@ -144,7 +160,8 @@ a{
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     color: ivory;
-    height: 40px;
+    height: 50px;
+    width: 133px;
     padding: 12px;
     text-align: center;
 }
@@ -161,29 +178,36 @@ ul{
 #filtres{
     display: flex;
     justify-content: flex-start;
-    
+    align-items: center;
+       
 }
 
 #titre_filtres{
     display: flex;
     align-items: center;
+    margin: 50px 30px 50px 0;
 }
 
 #liste_filtres{
     display: flex;
-    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .lien_filtre{
     text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    padding: 15px 20px 15px 10px;
 }
 
 #Economique{
     display: flex;
+    align-items: center;
     border: 1px solid #F2F2F2;
-    margin-right: 20px;
-    border-radius: 15px;
-    padding: 7px;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 25px;
     
 }
 
@@ -191,46 +215,111 @@ ul{
     background-color: #DEEBFF;
 }
 
+.fas.fa-money-bill-wave{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+    background-color: #F2F2F2;
+    color: #0065FC;
+    height: 50px;
+    width: 50px;
+    background-color: #DEEBFF;
+    border-radius: 30px;
+
+}
+
 #Familial{
     display: flex;
-    border: 2px solid #F2F2F2;
-    margin-right: 20px;
-    border-radius: 15px;
-    padding: 7px;
+    align-items: center;
+    border: 1px solid #F2F2F2;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 25px;
 }
 
 #Familial:hover{
     background-color: #DEEBFF;
 }
 
+.fas.fa-child{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+    background-color: #F2F2F2;
+    color: #0065FC;
+    height: 50px;
+    width: 50px;
+    background-color: #DEEBFF;
+    border-radius: 30px;
+
+}
+
 #Romantique{
     display: flex;
-    border: 2px solid #F2F2F2;
-    margin-right: 20px;
-    border-radius: 15px;
-    padding: 7px;
+    align-items: center;
+    border: 1px solid #F2F2F2;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 25px;
 }
 
 #Romantique:hover{
     background-color: #DEEBFF;
 }
 
+.fas.fa-heart{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+    background-color: #F2F2F2;
+    color: #0065FC;
+    height: 50px;
+    width: 50px;
+    background-color: #DEEBFF;
+    border-radius: 30px;
+}
+
+
 #Animaux{
     display: flex;
-    border: 2px solid #F2F2F2;
-    margin-right: 20px;
-    border-radius: 15px;
-    padding: 7px;
+    align-items: center;
+    border: 1px solid #F2F2F2;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 25px;
 }
 
 #Animaux:hover{
     background-color: #DEEBFF;
 }
 
+.fas.fa-dog{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+    background-color: #F2F2F2;
+    color: #0065FC;
+    height: 50px;
+    width: 50px;
+    background-color: #DEEBFF;
+    border-radius: 30px;
+}
+
 #infos{
     display: flex;
-    flex-direction: column;
-    font-size: 12px;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+
+
+.fas.fa-info{
+    color: #0065FC;
+    border-radius: 30px;
+    border: 1px solid #F2F2F2;
+    padding: 5px 10px 5px 10px;
+    margin-right: 12px;
 }
 
 /*Footer*/
@@ -245,7 +334,11 @@ ul{
 
 .footer_container h2{
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
+}
+
+.footer_container p{
+    font-size: 14px;
 }
 
 .footer_menus{
