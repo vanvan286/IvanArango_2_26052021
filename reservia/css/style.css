@@ -322,6 +322,52 @@ ul{
     margin-right: 12px;
 }
 
+/*Hébergements*/
+
+.marseille{
+    background-color: #F2F2F2;
+    padding: 45px 40px 105px 40px;
+}
+
+.marseille h1{
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+#cannebiere img{
+    height: 115px;
+    width: 250px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin: 5px 15px 10px -10px;
+}
+
+#cannebiere{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: auto;
+    width: 245px;
+    padding-left: 15px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+}
+
+#cannebiere h3{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#cannebiere p{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.fas.fa-star{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 /*Footer*/
 
 .footer_container{
