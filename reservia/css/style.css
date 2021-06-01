@@ -82,7 +82,7 @@ a{
 .header_container img{
     width: 100px;
     display: block;
-    padding: 30px  45px;
+    padding: 40px 0 45px 0;
     border-top: 2px solid transparent;
 }
 
@@ -98,8 +98,17 @@ a{
     flex-direction: row;
 }
 
+
 .bouton_nav{
     color: #000;
+    display: block;
+    padding: 45px 25px 0px 25px;
+    border-top: 2px solid transparent;
+    font-weight: bold;
+}
+
+.bouton_nav1{
+    color: #0065FC;
     display: block;
     padding: 45px 25px 0px 25px;
     border-top: 2px solid transparent;
@@ -324,20 +333,45 @@ ul{
 
 /*Hébergements*/
 
+.hebergement_container{
+    display: flex;
+}
+
 .marseille{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    width: 877px;
+    border-radius: 15px;
     background-color: #F2F2F2;
-    padding: 45px 40px 105px 40px;
+    padding: 45px 40px 40px 40px;
+    margin-bottom: 60px;
+    margin-right: 20px;
 }
 
 .marseille h1{
+    grid-column: 1;
+    grid-row: 1;
     font-weight: bolder;
     font-size: 20px;
     margin-bottom: 25px;
 }
 
+.marseille h2{
+    grid-column: 1;
+    grid-row: 4;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+
+/*Cannebière*/
+
 #cannebiere img{
     height: 115px;
     width: 250px;
+    object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     margin: 5px 15px 10px -10px;
@@ -347,9 +381,12 @@ ul{
     display: flex;
     flex-direction: column;
     align-content: center;
-    height: auto;
+    grid-column: 1;
+    grid-row: 2;
+    height: 199px;
     width: 245px;
     padding-left: 15px;
+    padding-bottom: 10px;
     border-radius: 15px;
     background-color: #FFFFFF;
     transition: 0.5s;
@@ -380,14 +417,274 @@ ul{
     color: #0065FC;   
 }
 
+/*Hôtel du port*/
+
+#hotel_port img{
+    height: 115px;
+    width: 250px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin: 5px 15px 10px -10px;
+}
+
+#hotel_port{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    grid-column: 2;
+    grid-row: 2;
+    height: 199px;
+    width: 245px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    transition: 0.5s;
+}
+
+#hotel_port a{
+    color: black;
+}
+
+#hotel_port h3{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#hotel_port p{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#hotel_port:hover{
+    transform: scale(1.05);
+}
+
+/*Hôtel les mouettes*/
+
+#hotel_mouettes img{
+    height: 115px;
+    width: 250px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin: 5px 15px 10px -10px;
+}
+
+#hotel_mouettes{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    grid-column: 3;
+    grid-row: 2;
+    height: 199px;
+    width: 245px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    transition: 0.5s;
+}
+
+#hotel_mouettes a{
+    color: black;
+}
+
+#hotel_mouettes h3{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#hotel_mouettes p{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#hotel_mouettes:hover{
+    transform: scale(1.05);
+}
+
+/*Hôtel de la mer*/
+
+#hotel_mer img{
+    height: 115px;
+    width: 250px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin: 5px 15px 10px -10px;
+}
+
+#hotel_mer{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    grid-column: 1;
+    grid-row: 3;
+    height: 199px;
+    width: 245px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    margin-top: 30px;
+    background-color: #FFFFFF;
+    transition: 0.5s;
+}
+
+#hotel_mer a{
+    color: black;
+}
+
+#hotel_mer h3{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#hotel_mer p{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#hotel_mer:hover{
+    transform: scale(1.05);
+}
+
+/*Auberge Le Panier*/
+
+#le_panier img{
+    height: 115px;
+    width: 250px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin: 5px 15px 10px -10px;
+}
+
+#le_panier{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    grid-column: 2;
+    grid-row: 3;
+    height: 199px;
+    width: 245px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    margin-top: 30px;
+    background-color: #FFFFFF;
+    transition: 0.5s;
+}
+
+#le_panier a{
+    color: black;
+}
+
+#le_panier h3{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#le_panier p{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#le_panier:hover{
+    transform: scale(1.05);
+}
+
+/*Hôtel chez Amina*/
+
+#amina img{
+    height: 115px;
+    width: 250px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin: 5px 15px 10px -10px;
+}
+
+#amina{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    grid-column: 3;
+    grid-row: 3;
+    height: 199px;
+    width: 245px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    margin-top: 30px;
+    background-color: #FFFFFF;
+    transition: 0.5s;
+}
+
+#amina a{
+    color: black;
+}
+
+#amina h3{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#amina p{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#amina:hover{
+    transform: scale(1.05);
+}
+
+/*les plus populaires*/
+
+.populaires{
+    height: 625px;
+    width: 415px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    padding: 45px 35px 35px;
+    margin-bottom: 60px;
+    margin-left: 20px;
+}
+
+.populaires h1{
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+/*Hôtel Le soleil du matin*/
+
+#soleil_matin img{
+    height: 133px;
+    width: 127px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#soleil_matin{
+    display: flex;
+    height: auto;
+    width: 343px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 15px;
+    margin-top: 30px;
+    background-color: #FFFFFF;
+}
+
 
 /*Footer*/
 
-.footer_container{
+.footer{
     width: 1440px;
     height: 217px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     background-color: #F2F2F2;
 }
 
