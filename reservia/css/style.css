@@ -335,6 +335,7 @@ ul{
 
 .hebergement_container{
     display: flex;
+    justify-content: space-around;
 }
 
 .marseille{
@@ -643,6 +644,9 @@ ul{
 /*les plus populaires*/
 
 .populaires{
+    display: grid;
+    grid-template-rows: 0.90fr 4fr 4fr 4fr;
+    grid-row-gap: 24px;
     height: 625px;
     width: 415px;
     background-color: #F2F2F2;
@@ -655,7 +659,15 @@ ul{
 .populaires h1{
     font-weight: bolder;
     font-size: 20px;
-    margin-bottom: 25px;
+}
+
+#titre_populaires{
+    display: flex;
+    justify-content: space-between;
+}
+
+#titre_populaires i{
+    font-size: 20px;
 }
 
 /*Hôtel Le soleil du matin*/
@@ -670,12 +682,86 @@ ul{
 
 #soleil_matin{
     display: flex;
-    height: auto;
+    height: 134px;
     width: 343px;
     padding: 5px 5px 5px 5px;
     border-radius: 15px;
-    margin-top: 30px;
     background-color: #FFFFFF;
+    transition: 0.5s;
+}
+
+#soleil_matin:hover{
+    transform: scale(1.05);
+}
+
+#texte_hotel{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    padding: 20px 60px 5px 20px;
+}
+
+#texte_hotel h3{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#texte_hotel p{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#texte_hotel .notation{
+    margin-top: 20px;
+}
+
+
+/*Au coeur de l'eau*/
+
+#coeur_eau img{
+    height: 133px;
+    width: 127px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#coeur_eau{
+    display: flex;
+    height: 134px;
+    width: 343px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    transition: 0.5s;
+}
+
+#coeur_eau:hover{
+    transform: scale(1.05);
+}
+
+/*Tou bleu et blanc*/
+
+#bleu_blanc img{
+    height: 133px;
+    width: 127px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#bleu_blanc{
+    display: flex;
+    height: 134px;
+    width: 343px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    transition: 0.5s;
+}
+
+#bleu_blanc:hover{
+    transform: scale(1.05);
 }
 
 
@@ -688,12 +774,12 @@ ul{
     background-color: #F2F2F2;
 }
 
-.footer_container h2{
+.footer h2{
     font-weight: bold;
     font-size: 16px;
 }
 
-.footer_container p{
+.footer p{
     font-size: 14px;
 }
 
