@@ -72,6 +72,9 @@ body{
     margin: auto;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
 
 .container{
     width: 1340px;
@@ -178,7 +181,7 @@ a{
 
 
 
-#bouton_rechercher{
+.bouton_rechercher{
     background-color: #0065FC;
     border: solid 1px #0065FC;
     font-weight: bold;
@@ -195,26 +198,30 @@ a{
     border: 1px solid #F2F2F2;
 }
 
+.bouton_rechercher.btn_search_mobile{
+    display: none;
+}
+
 /*filtres*/
 ul{
     list-style-type: none;
 }
 
-#filtres{
+.filtres{
     display: flex;
     justify-content: flex-start;
     align-items: center;
        
 }
 
-#titre_filtres{
+.titre_filtres{
     font-weight: bold;
     display: flex;
     align-items: center;
     margin: 50px 30px 50px 0;
 }
 
-#liste_filtres{
+.liste_filtres{
     display: flex;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -705,4 +712,104 @@ ul{
 }
 
 
+@media screen and (max-width: 991px){
+    #bloc_page{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 
+    .header_container{
+        width: 100%;
+    }
+
+    .bouton_rechercher.btn_search_mobile{
+        display: none;
+    }
+    
+    .titre_filtres  {
+        margin-right: 10px;
+    }
+
+    #Economique, #Familial, #Romantique, #Animaux{
+        margin-right: 10px;
+    }
+
+    .hebergement_container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .populaires{
+        order: 1;
+        margin-left: 0;
+        margin-bottom: 20px;
+        width: 64%;
+    }
+
+    .populaires h2{
+        margin-bottom: 20px;
+    }
+
+    .container_populaires{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .items_populaires{
+        margin-bottom: 2%;
+        width: 100%;
+    }
+
+    .marseille{
+        order: 2;
+        width: 65.5%;
+    }
+
+    .activites_container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 70%;
+    }
+
+    .container_activites_1, .container_activites_2{
+        order: 1;
+    }
+
+    .container_activites_3, .container_activites_4{
+        order: 2;
+    }
+
+    .item_grand_activites{
+        width: 495px;
+        margin-right: 40px;
+    }
+
+    .item_grand_activites img{
+        width: 495px;
+    }
+
+    .item_moyen_activites, .item_xsmall_activites{
+        margin-right: 0;
+        width: 395px;
+    }
+
+    .item_moyen_activites img, .item_xsmall_activites img{
+        width: 395px;
+    }
+
+    .item_small_activites, .item_small_activites_1, .item_small_activites img, .item_small_activites_1 img{
+        width: 395px;
+    }
+    
+
+    .footer{
+        width: 100%;
+    }
+
+    .footer_menus{
+        display: flex;
+        justify-content: space-around;
+    }
+}
