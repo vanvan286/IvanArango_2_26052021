@@ -70,17 +70,14 @@ table {
 body{
     font-family: "raleway regular";
     margin: auto;
+    width: 95%;
 }
 
 html {
     scroll-behavior: smooth;
+    font-size: 16px;
   }
 
-.container{
-    width: 1340px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 a{
     text-decoration: none;
@@ -93,7 +90,7 @@ a{
 }
 
 .header_container img{
-    width: 100px;
+    width: 40%;
     display: block;
     padding: 40px 0 45px 0;
     border-top: 2px solid transparent;
@@ -104,13 +101,16 @@ a{
 .header_container{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .header_container ul{
     display: flex;
-    flex-direction: row;
 }
 
+.nav_bar{
+    display: flex;
+}
 
 .bouton_nav{
     color: #000;
@@ -136,16 +136,16 @@ a{
 /*recherche*/
 #recherche{
     margin: auto;
-    font-size: 18px;
+    font-size: 1.3rem;
 }
 
 #recherche h1{
     font-weight: bolder;
-    font-size: 22px;
+    font-size: 1.5rem;
 }
 
 #recherche p{
-    font-size: 14px;
+    font-size: 0.9rem;
     font-weight: normal;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -162,7 +162,7 @@ a{
 
 #rechercher::placeholder{
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1rem;
     color: black;
     padding-left: 14px;
 }
@@ -376,21 +376,18 @@ ul{
     margin-left: 15px;
 }
 
-.ligne1_hebergement{
+.items_marseille{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.ligne2_hebergement{
-    display: flex;
-    justify-content: space-between;
-}
+
 
 /*Items Hebergements*/
 
 .items_hebergement img{
     height: 115px;
-    width: 236px;
+    width: 96.5%;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -398,6 +395,9 @@ ul{
 }
 
 .items_hebergement{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 30%;
     width: 245px;
     padding-bottom: 10px;
     border-radius: 15px;
@@ -498,7 +498,7 @@ ul{
 .items_populaires{
     display: flex;
     height: 134px;
-    width: 343px;
+    width: 100%;
     padding: 5px 5px 5px 5px;
     margin-bottom: 12%;
     border-radius: 15px;
@@ -518,7 +518,7 @@ ul{
 
 .texte_populaires{
     color: black;
-    padding: 20px 60px 5px 20px;
+    padding: 10px 0 5px 20px;
 }
 
 .texte_populaires h3{
@@ -698,8 +698,13 @@ ul{
     font-size: 16px;
 }
 
-.footer p{
+.footer ul{
     font-size: 14px;
+    padding: 20px 0;
+}
+
+.footer li {
+    padding: 5px 0 5px 0;
 }
 
 .footer_menus{
@@ -713,11 +718,6 @@ ul{
 
 
 @media screen and (max-width: 991px){
-    #bloc_page{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
     .header_container{
         width: 100%;
     }
@@ -743,7 +743,7 @@ ul{
         order: 1;
         margin-left: 0;
         margin-bottom: 20px;
-        width: 64%;
+        width: 91%;
     }
 
     .populaires h2{
@@ -761,9 +761,13 @@ ul{
         width: 100%;
     }
 
+    .items_populaires img{
+        width: 475px;
+    }
+
     .marseille{
         order: 2;
-        width: 65.5%;
+        width: 93.2%;
     }
 
     .activites_container{
@@ -807,9 +811,6 @@ ul{
         width: 100%;
     }
 
-    .footer_menus{
-        display: flex;
-    }
 }
 
 @media screen and (max-width: 767px){
@@ -877,4 +878,33 @@ ul{
         height: 235px; 
     }
 
+}
+
+@media screen and (max-width: 576px){
+    .header_container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .header_container img{
+        padding-bottom: 5px;
+    }
+
+    .header_container a{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .header_container ul{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .bouton_rechercher.btn_search_mobile{
+        display: block;
+    }
+
+    .bouton_rechercher{
+        display: none;
+    }
 }
