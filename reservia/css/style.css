@@ -803,13 +803,78 @@ ul{
         width: 395px;
     }
     
-
     .footer{
         width: 100%;
     }
 
     .footer_menus{
         display: flex;
-        justify-content: space-around;
     }
+}
+
+@media screen and (max-width: 767px){
+   .filtres{
+       display: block;
+   }
+
+   .titre_filtres{
+       margin-bottom: 10px;
+   }
+
+   .liste_filtres{
+       margin-top: 20px;
+       display: grid;
+       grid-template-columns: 19% 15% 15%;
+   }
+
+    #Animaux{
+        margin-top: 20px;
+       
+    }
+
+    .hebergement_container{
+        width: 75%;
+    }
+
+    .ligne1_hebergement{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ligne2_hebergement{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .items_hebergement{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 95%;
+    }
+
+    .items_hebergement img{
+        width: 98.5%;
+    }
+
+    .container_activites_1, .container_activites_2, .container_activites_3, .container_activites_4{
+        width: 75%;
+        
+    }
+
+    .item_grand_activites, .item_moyen_activites, .item_small_activites, .item_xsmall_activites, .item_small_activites_1{
+        width: 100%;
+        
+    }
+
+    .item_grand_activites, .item_moyen_activites, .item_small_activites, .item_small_activites_1,.item_xsmall_activites{
+        height: 295px;
+        margin-bottom: 40px;
+    }
+
+    .item_grand_activites img, .item_moyen_activites img, .item_small_activites img, .item_small_activites_1 img, .item_xsmall_activites img{
+        width: 100%;
+        height: 235px; 
+    }
+
 }
