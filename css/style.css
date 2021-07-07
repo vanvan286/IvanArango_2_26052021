@@ -103,15 +103,12 @@ a{
 }
 
 .logo_reservia{
-    display: flex;
-    justify-self: flex-start;
+    padding-top: 47px;
 }
 
 .header_container img{
-    width: 40%;
-    display: block;
-    padding: 40px 0 45px 0;
-    border-top: 2px solid transparent;
+    width: 120px;
+    display: inline-block;
 }
 
 /*navigation*/
@@ -119,6 +116,7 @@ a{
 .header_container{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 .header_container ul{
@@ -231,20 +229,16 @@ ul{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-       
+    margin: 30px 0px;
 }
 
 .titre_filtres{
     font-weight: bold;
-    display: flex;
-    align-items: center;
-    margin: 50px 30px 50px 0;
+    margin: 0px 30px 0px 0;
 }
 
 .liste_filtres{
     display: flex;
-    margin-top: 30px;
-    margin-bottom: 30px;
 }
 
 .lien_filtre{
@@ -252,20 +246,7 @@ ul{
     font-weight: bolder;
     color: black;
     padding: 15px 20px 15px 10px;
-}
-
-#Economique{
-    display: flex;
-    align-items: center;
-    border: 2px solid #F2F2F2;
-    height: 50px;
-    border-radius: 30px;
-    margin-right: 25px;
-    transition: ease-out 0.5s;
-}
-
-#Economique:hover{
-    background-color:  #0065FC;;
+    font-size: 16px;
 }
 
 .fas.fa-money-bill-wave{
@@ -281,21 +262,6 @@ ul{
 
 }
 
-#Familial{
-    display: flex;
-    align-items: center;
-    border: 2px solid #F2F2F2;
-    height: 50px;
-    border-radius: 30px;
-    margin-right: 25px;
-    transition: ease-out 0.5s;
-    
-}
-
-#Familial:hover{
-    background-color:  #0065FC;
-}
-
 .fas.fa-child{
     display: flex;
     align-items: center;
@@ -309,7 +275,8 @@ ul{
 
 }
 
-#Romantique{
+
+.liste_filtres_items{
     display: flex;
     align-items: center;
     border: 2px solid #F2F2F2;
@@ -319,7 +286,12 @@ ul{
     transition: ease-out 0.5s;
 }
 
-#Romantique:hover{
+.liste_filtres > .liste_filtres_items:last-child{
+    margin-right: 0px;
+}
+
+
+.liste_filtres_items:hover{
     background-color:  #0065FC;;
 }
 
@@ -335,19 +307,6 @@ ul{
     border-radius: 30px;
 }
 
-#Animaux{
-    display: flex;
-    align-items: center;
-    border: 2px solid #F2F2F2;
-    height: 50px;
-    border-radius: 30px;
-    margin-right: 25px;
-    transition: ease-out 0.5s;
-}
-
-#Animaux:hover{
-    background-color:  #0065FC;;
-}
 
 .fas.fa-dog{
     display: flex;
@@ -772,10 +731,6 @@ ul{
     .bouton_rechercher.btn_search_mobile{
         display: none;
     }
-    
-    .titre_filtres  {
-        margin-right: 10px;
-    }
 
     #Economique, #Familial, #Romantique, #Animaux{
         margin-right: 10px;
@@ -878,12 +833,17 @@ ul{
         width: 100%;
     }
 
+    .lien_filtre {
+        font-size: 14px;
+    }
+
+    .liste_filtres_items {
+        margin-right: 10px;
+    }
+
 }
 
 @media screen and (max-width: 767px){
-    .container{
-        max-width: 100%;
-    }
 
     .filtres{
        display: block;
@@ -893,75 +853,13 @@ ul{
        flex-wrap: wrap;
    }
 
-   #Animaux{
-       margin-top: 10px; 
-   }
-
-}
-
-@media screen and (max-width: 576px){
-    .container{
-        max-width: 100%;
+   .titre_filtres {
+        margin-top: 35px;
+        margin-bottom: 20px;
     }
 
-    .header_container img{
-        width: 100%;
-    }
-
-    #recherche h1{
-        text-align: left;
-        font-size: 33px;
-        margin-bottom: 25px;
-        margin-top: 40px;
-    }
-
-    #recherche p{
-        font-size: 21px;
-        margin-bottom: 40px;
-    }
-
-    #section_rechercher{
-        width: 100%;
-    }
-
-    .bouton_rechercher.btn_search_mobile{
-        display: block;
-        width: 50px;
-        height: 50px;
-        border-radius: 15px;
-    }
-
-    .bouton_rechercher{
-        display: none;
-    }
-
-    .liste_filtres a{
-        font-size: 18px;
-    }
-
-    #Romantique, #Familial,#Economique{
-        margin-top: 10px; 
-    }
-
-
-    .fas.fa-info{
-        margin-bottom: 55px;
-    }
-
-    .item_grande_img, .item_petite_img_1, .item_petite_img_2, .item_petite_img_3, .item_petite_img_4{
-        width: 100%;
-        height: 187px;
-    }
-
-    .item_grande_img img, .item_petite_img_1 img, .item_petite_img_2 img, .item_petite_img_3 img, .item_petite_img_4 img{
-        width: 100%;
-        height: 133px;
-    }
-}
-
-@media screen and (max-width: 375px){
-    .container{
-        width: 100%;
+    .liste_filtres_items {
+        margin-bottom: 10px;
     }
 
     /* Header */
@@ -982,15 +880,12 @@ ul{
         padding-right: 0;
     }
 
-    .header_container img {
-        width: 120px;
-        padding: 30px 0 0 20px;
-    }
-
-    .bouton_nav{
-        font-size: 15px;
-        padding: 35px 48px 10px 49px;
+    .bouton_nav {
+        font-size: 14px;
+        padding: 0px 0px 10px 0px;
         border-bottom: 2px solid #F2F2F2;
+        text-align: center;
+        border-top: none;
     }
 
     .bouton_nav:hover{
@@ -1046,7 +941,7 @@ ul{
 
     .items_populaires{
         height: 144px;
-        width: 334px;
+        width: 100%;
         margin-bottom: 9px;
     }
 
@@ -1135,6 +1030,79 @@ ul{
 
     .items_footer ul{
         margin-bottom: 20px;
+    }
+
+    .container{
+        max-width: 100%;
+    }
+
+    #recherche h1{
+        text-align: left;
+        font-size: 23px;
+        margin-bottom: 10px;
+        margin-top: 40px;
+    }
+
+    #recherche p{
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    #section_rechercher{
+        width: 100%;
+    }
+
+    .bouton_rechercher.btn_search_mobile{
+        display: block;
+        width: 50px;
+        height: 50px;
+        border-radius: 15px;
+    }
+
+    .bouton_rechercher{
+        display: none;
+    }
+
+    .liste_filtres a{
+        font-size: 18px;
+    }
+
+    .fas.fa-info{
+        margin-bottom: 55px;
+    }
+
+    .item_grande_img, .item_petite_img_1, .item_petite_img_2, .item_petite_img_3, .item_petite_img_4{
+        width: 100%;
+        height: 187px;
+    }
+
+    .item_grande_img img, .item_petite_img_1 img, .item_petite_img_2 img, .item_petite_img_3 img, .item_petite_img_4 img{
+        width: 100%;
+        height: 133px;
+    }
+
+    .header_container ul {
+        width: 100%;
+    }
+
+    .nav_bar{
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .header_container ul li{
+        width: 50%;
+    }
+
+    .logo_reservia {
+        padding-top: 30px;
+        padding-left: 15px;
+    }
+
+    .bouton_nav1.inscrire_mobile {
+        display: block;
+        padding: 38px 15px 0px 0px;
+        border: none;
     }
 
 }
