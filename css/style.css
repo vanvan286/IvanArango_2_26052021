@@ -528,6 +528,7 @@ ul{
 
 .activites_container{
     display: flex;
+    justify-content: space-between;
     margin-bottom: 30px;
 }
 
@@ -551,9 +552,7 @@ ul{
 /*Items grands activités*/
 
 .item_grande_img{
-    width: 100%;
-    height: 445px;
-    margin-right: 40px;
+    width: 23%;
     border-radius: 15px;
     box-shadow: 0 0 10px 2px #dfdbdb;
     transition: 0.5s;
@@ -571,7 +570,7 @@ ul{
     object-fit: cover;
 }
 
-.activites_description{
+.activites_container h3{
     color: black;
     font-weight: bold;
     font-size: 16px;
@@ -580,8 +579,8 @@ ul{
 
 /*Items Moyens Activités*/
 
-.items_container_1{
-    margin-right: 40px;
+.items_container_1, .items_container_2{
+    width: 23%;
 }
 
 .item_petite_img_1{
@@ -681,28 +680,28 @@ ul{
 
 /*Footer*/
 
-.footer_wrapper{
+footer{
     width: 100%;
     background-color: #F2F2F2;
 }
 
-.footer_wrapper h2{
+footer h2{
     font-weight: bold;
     font-size: 16px;
     margin-bottom: 24px;
 }
 
 
-.footer_wrapper li {
+footer li {
     padding: 5px 0 5px 0;
 }
 
-.footer_wrapper .footer_inner{
+footer .footer_inner{
     display: flex;
     padding: 45px 0px;
 }
 
-.footer_wrapper .items_footer{
+footer .items_footer{
     width: 33.333%;
 }
 
@@ -718,6 +717,9 @@ ul{
     Responsive Reservia
 ######################################################################*/
 
+@media screen and (max-width: 1334px){
+    
+}
 
 @media screen and (max-width: 991px){
     .container{
@@ -737,11 +739,6 @@ ul{
     }
 
     /* Hebergements Marseille et Populaires*/
-
-    .hebergement_container{
-        display: flex;
-        flex-direction: column;
-    }
 
     .populaires{
         order: 1;
@@ -777,11 +774,6 @@ ul{
         background-position: center;
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
-    }
-
-    .marseille{
-        order: 2;
-        width: 100%;
     }
 
     /* Activités */
@@ -1019,12 +1011,12 @@ ul{
 
     /* Footer */
 
-    .footer_wrapper .footer_inner{
+    footer .footer_inner{
         display: block;
         padding-bottom: 20px;
     }
 
-    .footer_wrapper .items_footer {
+    footer .items_footer {
         width: 100%;
     }
 

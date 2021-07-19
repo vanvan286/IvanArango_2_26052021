@@ -14,7 +14,7 @@
         <body>
             <div id="bloc_page">
                 <!--Header-->
-                <div class="header_wrapper">
+                <header>
                     <div class="header_container container"> 
                         <a href="index.html" class="logo_reservia"><img src="img/logo/Reservia@3x.png" alt="logo reservia"></a>
                         <a class="bouton_nav1 inscrire_mobile" href="#">S'inscrire</a>
@@ -26,7 +26,7 @@
                             <a class="bouton_nav1 inscrire_desktop" href="#">S'inscrire</a>
                         </div>    
                     </div>
-                </div>
+                </header>
 
                 <div class="content_wrapper">
                     <div class="content_container container">
@@ -58,7 +58,7 @@
                         </div>
 
                         <!--Hébergements-->
-                        <div class="hebergement_container" id="hebergements">
+                        <section class="hebergement_container" id="hebergements">
                             <div class="marseille">
                                 <a name="hebergements_marseille"></a>
                                 <h2>Hébergements à Marseille</h2>
@@ -238,83 +238,67 @@
                                     </a>
                                 </div>
                             </div>
-                        </div>
+                        </section>
                         <!--Activités-->
                         <div class="titre_activite">
                         <a name="activites_marseille"></a>
                         <h2>Activités à Marseille</h2>
                         </div>
-                        <div class="activites_container" id="activites">
+                        <section class="activites_container" id="activites">
                             
-                                <!--Vieux port-->
-                                <a href="#" class="item_grande_img">
-                                    <div id="img_vieux_port">
-                                        <img src="img/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="photo activites">
+                            <!--Vieux port-->
+                            <a href="#" class="item_grande_img">
+                                <div id="img_vieux_port">
+                                    <img src="img/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="photo activites">
+                                </div>    
+                                <h3>Vieux Port</h3>
+                            </a>
+                            <div class="items_container_1">
+                                <!--Fort de Pomègues-->
+                                <a href="#" class="item_petite_img_1">
+                                    <div id="img_pomegues">
+                                        <img src="img/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="photo activites">
                                     </div>
-                                    <div class="activites_description">    
-                                        <h3>Vieux Port</h3>
-                                    </div>
+                                    <h3>Fort de Pomègues</h3>
                                 </a>
-                                <div class="items_container_1">
-                                    <!--Fort de Pomègues-->
-                                    <a href="#" class="item_petite_img_1">
-                                        <div id="img_pomegues">
-                                            <img src="img/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="photo activites">
-                                        </div>
-                                        <div class="activites_description">
-                                            <h3>Fort de Pomègues</h3>
-                                        </div>
-                                    </a>
 
-                                    <!--Îles du Frioul-->
-                                    <a href="#" class="item_petite_img_2">
-                                        <div id="img_frioul">
-                                            <img src="img/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="photo activites">
-                                        </div>
-                                        <div class="activites_description">
-                                            <h3>Îles du Frioul</h3>        
-                                        </div>
-                                    </a>
+                                <!--Îles du Frioul-->
+                                <a href="#" class="item_petite_img_2">
+                                    <div id="img_frioul">
+                                        <img src="img/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="photo activites">
+                                    </div>
+                                    <h3>Îles du Frioul</h3>        
+                                </a>
+                            </div>
+                            
+                            <!--Parc National des Calanques-->
+                            <a href="#" class="item_grande_img">    
+                                <div id="img_calanques">
+                                    <img src="img/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="photo activites">
                                 </div>
-                            
-
-                            
-                                <!--Parc National des Calanques-->
-                                <a href="#" class="item_grande_img">    
-                                    <div id="img_calanques">
-                                        <img src="img/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="photo activites">
-                                    </div>
-                                    <div class="activites_description">
-                                        <h3>Parc national des Calanques</h3>
-                                    </div>
-                                </a>
-                                <div class="items_container_2">
-                                <!--Notre-Dame-de-la-Garde-->
-                                <a href="#" class="item_petite_img_3">
-                                    <div id="img_notre_dame">
-                                        <img src="img/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="photo activites">
-                                    </div>
-                                    <div class="activites_description">
-                                        <h3>Notre-Dame-de-la-Garde</h3>
-                                    </div>
-                                </a>
-
-                                <!--Parc Longchamp-->
-                                <a href="#" class="item_petite_img_4">
-                                    <div id="img_longchamp">
-                                        <img src="img/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="photo activites">
-                                    </div>
-                                    <div class="activites_description">
-                                        <h3>Parc Longchamp</h3>
-                                    </div>
-                                </a>
+                                <h3>Parc national des Calanques</h3>
+                            </a>
+                            <div class="items_container_2">
+                            <!--Notre-Dame-de-la-Garde-->
+                            <a href="#" class="item_petite_img_3">
+                                <div id="img_notre_dame">
+                                    <img src="img/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="photo activites">
                                 </div>
-                            
-                        </div>
+                                <h3>Notre-Dame-de-la-Garde</h3>
+                            </a>
+
+                            <!--Parc Longchamp-->
+                            <a href="#" class="item_petite_img_4">
+                                <div id="img_longchamp">
+                                    <img src="img/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="photo activites">
+                                </div>
+                                <h3>Parc Longchamp</h3>
+                            </a>     
+                        </section>
                     </div>
                 </div>
 
-                <div class="footer_wrapper">
+                <footer>
                     <div class="footer_contain container">
                         <div class="footer_inner">
                             <div class="items_footer">
@@ -341,7 +325,7 @@
                             </div>
                         </div>    
                     </div>
-                </div>
+                </footer>
 
             </div>
 
