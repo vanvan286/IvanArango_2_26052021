@@ -129,6 +129,8 @@ a{
 
 .nav_bar{
     display: flex;
+    width: 100%;
+    justify-content: flex-end;
 }
 
 .bouton_nav{
@@ -474,11 +476,15 @@ ul{
 
 /*Items Populaires*/
 
-.img_items_populaire{
-    height: auto;
+.img_items_populaires{
     width: 128px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 130px;
+}
+
+.items_populaires img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
@@ -503,6 +509,8 @@ ul{
     color: black;
 }
 
+
+
 .populaires_description{
     color: black;
     padding: 10px 0 5px 20px;
@@ -517,11 +525,11 @@ ul{
 .populaires_description p{
     font-size: 14px;
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .populaires_description ul{
     display: flex;
-    margin-top: 40px;
 }
 
 /*Activités à Marseille*/
@@ -553,6 +561,7 @@ ul{
 
 .item_grande_img{
     width: 23%;
+    height: 442px;
     border-radius: 15px;
     box-shadow: 0 0 10px 2px #dfdbdb;
     transition: 0.5s;
@@ -587,7 +596,6 @@ ul{
     display: flex;
     flex-direction: column;
     height: 235px;
-    width: 300px;
     margin-bottom: 40px;
     border-radius: 15px;
     box-shadow: 0 0 10px 2px #dfdbdb;
@@ -600,7 +608,7 @@ ul{
 
 .item_petite_img_1 img{
     height: 180px;
-    width: 300px;
+    width: 100%;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     object-fit: cover;
@@ -613,7 +621,6 @@ ul{
     display: flex;
     flex-direction: column;
     height: 170px;
-    width: 300px;
     margin-bottom: 40px;
     border-radius: 15px;
     box-shadow: 0 0 10px 2px #dfdbdb;
@@ -626,7 +633,7 @@ ul{
 
 .item_petite_img_2 img{
     height: 108px;
-    width: 300px;
+    width: 100%;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     object-fit: cover;
@@ -636,7 +643,6 @@ ul{
     display: flex;
     flex-direction: column;
     height: 194px;
-    width: 300px;
     margin-bottom: 40px;
     border-radius: 15px;
     box-shadow: 0 0 10px 2px #dfdbdb;
@@ -649,7 +655,7 @@ ul{
 
 .item_petite_img_3 img{
     height: 137px;
-    width: 300px;
+    width: 100%;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     object-fit: cover;
@@ -659,7 +665,6 @@ ul{
     display: flex;
     flex-direction: column;
     height: 207px;
-    width: 300px;
     border-radius: 15px;
     box-shadow: 0 0 10px 2px #dfdbdb;
     transition: 0.5s;
@@ -671,7 +676,7 @@ ul{
 
 .item_petite_img_4 img{
     height: 150px;
-    width: 300px;
+    width: 100%;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     object-fit: cover;
@@ -717,11 +722,8 @@ footer .items_footer{
     Responsive Reservia
 ######################################################################*/
 
-@media screen and (max-width: 1334px){
-    
-}
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 1338px){
     .container{
         width: 100%;
         padding-left: 15px;
@@ -762,18 +764,22 @@ footer .items_footer{
         width: 100%;
     }
 
-    .items_populaires img{
-        width: 475px;
+    .img_items_populaires{
+        width: 50%;
     }
 
-    .img_items_populaire {
-        height: auto;
-        width: 50%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+    .items_populaires img{
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
+    }
+
+    .marseille{
+        order: 2;
+        width: 100%;
+    }
+
+    .hebergement_container{
+        flex-direction: column;
     }
 
     /* Activités */
@@ -787,6 +793,7 @@ footer .items_footer{
 
     .item_grande_img{
         margin-right: 0;
+        width: 100%;
         height: 300px;
         margin-bottom: 40px;
     }
@@ -833,10 +840,19 @@ footer .items_footer{
         margin-right: 10px;
     }
 
+    .lien_filtre {
+        font-size: 12px;
+        padding: 15px 10px;
+    } 
+
 }
 
 @media screen and (max-width: 767px){
 
+    .bouton_nav1{
+        order: 1;
+    }
+    
     .filtres{
        display: block;
    }
@@ -937,7 +953,7 @@ footer .items_footer{
         margin-bottom: 9px;
     }
 
-    .img_items_populaire{
+    .items_populaire img{
         width: 41%;
     }
 
@@ -1080,6 +1096,7 @@ footer .items_footer{
     .nav_bar{
         width: 100%;
         margin-top: 25px;
+        order: 2;
     }
 
     .header_container ul li{
@@ -1097,4 +1114,17 @@ footer .items_footer{
         border: none;
     }
 
+}
+
+@media screen and (max-width: 375px){
+    .img_items_populaires {
+        width: 45%;
+    }
+
+    .populaires_description h3 {
+        font-size: 14px;
+    }
+
+    .populaires_description p {
+        font-size: 12px;
 }
